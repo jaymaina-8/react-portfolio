@@ -128,37 +128,139 @@ a {
 }
 
 /* 📬 Contact Form */
-form {
-  max-width: 500px;
-  margin: 2rem auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+.contact-form-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
-form input,
-form textarea {
-  padding: 0.9rem;
+.contact-form-container h2 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.contact-form-container p {
+  text-align: center;
+  color: #57606f;
+  margin-bottom: 2rem;
+}
+
+/* 👤 Icon Input Groups */
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  background-color: #f5f6fa;
+  border: 1px solid #dcdde1;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+}
+
+.input-group .icon {
+  color: #0097e6;
+}
+
+.input-group input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: transparent;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* 📝 Textarea */
+textarea {
+  width: 100%;
+  font-size: 1rem;
+  padding: 1rem;
   border: 1px solid #ccc;
   border-radius: 10px;
-  font-size: 1rem;
+  font-family: "Segoe UI", sans-serif;
+  resize: vertical;
+  margin-bottom: 1rem;
 }
 
+/* 🚀 Submit Button */
 form button {
-  padding: 0.8rem;
-  background-color: #2f3640;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #0097e6;
   color: white;
   border: none;
+  padding: 0.9rem 1.2rem;
+  font-weight: bold;
+  font-size: 1rem;
   border-radius: 10px;
-  font-weight: 600;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-form button:hover {
-  background-color: #353b48;
+form button:disabled {
+  background-color: #74b9ff;
+  cursor: not-allowed;
 }
 
-/* 💡 Responsive Tweaks */
+form button:hover:not(:disabled) {
+  background-color: #00a8ff;
+}
+
+/* ✅ Status Messages */
+.submission-message {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+}
+
+.submission-success {
+  background-color: #dff9fb;
+  color: #0984e3;
+}
+
+.submission-error {
+  background-color: #ffe6e6;
+  color: #d63031;
+}
+
+.submission-submitting {
+  background-color: #f1f2f6;
+  color: #636e72;
+}
+
+/* 🔄 Spinner */
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* 👁️ Accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* 📱 Responsive */
 @media screen and (max-width: 768px) {
   .home-buttons {
     flex-direction: column;
@@ -168,5 +270,60 @@ form button:hover {
   .intro {
     font-size: 1rem;
     padding: 0 1rem;
+  }
+
+  .contact-form-container {
+    padding: 1.5rem;
+  }
+}
+
+/* 🌐 Navbar Upgrades */
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #00d8ff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00d8ff;
+}
+
+/* ✨ Sticky Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #1e272e;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* 📱 Responsive Nav */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #1e272e;
+    padding: 1rem;
+    display: none;
+  }
+
+  .navbar.active .nav-links {
+    display: flex;
   }
 }

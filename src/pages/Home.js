@@ -23,7 +23,7 @@ function Home() {
             </p>
 
             <div className="home-buttons">
-                <a href="/jay_cv.pdf" download className="btn">
+                <a href="/john maina cv.odt" download className="btn">
                     <FaDownload />
                     Download CV
                 </a>
