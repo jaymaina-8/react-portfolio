@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import "./Navbar.css"; // make sure you create this file
+// make sure you create this file
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -10,8 +10,7 @@ function Navbar() {
             <div className="navbar-inner">
                 {/* Left: Logo */}
                 <div className="navbar-logo">
-                    <img src="/logo.svg" alt="Logo" />
-                    <span>john maina</span>
+                    <span>John maina</span>
                 </div>
 
                 {/* Center: Links */}
@@ -20,13 +19,6 @@ function Navbar() {
                     <NavLink to="/projects">Projects</NavLink>
                     <NavLink to="/contact">Contact</NavLink>
                 </nav>
-
-                {/* Right: Actions */}
-                <div className="navbar-actions">
-                    <button className="btn btn-outline">Sign In</button>
-                    <button className="btn btn-solid">Download</button>
-                </div>
-
                 {/* Mobile hamburger */}
                 <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
                     ☰

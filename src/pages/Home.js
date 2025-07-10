@@ -13,7 +13,8 @@ function Home() {
             <p className="subtitle">
                 <FaPython color="#3776AB" size={24} style={{ marginRight: "6px" }} />
                 <FaReact color="#61DBFB" size={24} style={{ marginRight: "6px" }} />
-                Fullstack Developer · React · Django · Supabase
+
+                Fullstack Developer · React · Django · Python.
             </p>
 
             <p className="intro">
