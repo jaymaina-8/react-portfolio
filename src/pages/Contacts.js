@@ -15,7 +15,7 @@ function Contact() {
     const [submissionMessage, setSubmissionMessage] = useState('');
 
     // Consider adding specific error types
-    const [errors, setErrors] = useState({});
+
 
     // Handle input changes and update form state
     const handleChange = (e) => {
