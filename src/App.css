@@ -87,7 +87,7 @@ a {
 }
 
 .btn {
-  background-color: #0097e6;
+  background-color: #000000;
   color: white;
   padding: 0.75rem 1.5rem;
   border: none;
@@ -101,19 +101,19 @@ a {
 }
 
 .btn:hover {
-  background-color: #00a8ff;
+  background-color: #000000;
   box-shadow: 0 6px 14px rgba(0, 151, 230, 0.4);
 }
 
 .btn.outline {
   background: transparent;
-  border: 2px solid #0097e6;
-  color: #0097e6;
+  border: 2px solid #000000;
+  color: #000000;
   box-shadow: none;
 }
 
 .btn.outline:hover {
-  background-color: #0097e6;
+  background-color: #000000;
   color: white;
 }
 
@@ -228,7 +228,7 @@ form button:hover:not(:disabled) {
 
 .submission-success {
   background-color: #dff9fb;
-  color: #0984e3;
+  color: #000000;
 }
 
 .submission-error {
@@ -284,7 +284,7 @@ form button:hover:not(:disabled) {
 .logo {
   font-size: 1.3rem;
   font-weight: bold;
-  color: #00d8ff;
+  color: #070707;
 }
 
 .nav-links {
@@ -298,7 +298,7 @@ form button:hover:not(:disabled) {
 }
 
 .nav-links a:hover {
-  color: #00d8ff;
+  color: #181919;
 }
 
 /* ✨ Sticky Navbar */
@@ -429,7 +429,7 @@ form button:hover:not(:disabled) {
 
 .tech-tag {
   background-color: #dff9fb;
-  color: #0097e6;
+  color: #000000;
   padding: 0.4rem 0.8rem;
   border-radius: 20px;
   font-size: 0.8rem;
@@ -445,13 +445,13 @@ form button:hover:not(:disabled) {
 
 .project-links a {
   font-weight: 500;
-  color: #0097e6;
+  color: #000000;
   transition: all 0.2s ease;
 }
 
 .project-links a:hover {
   text-decoration: underline;
-  color: #00a8ff;
+  color: #000000;
 }
 
 /* ⏳ Loading State */
@@ -479,7 +479,7 @@ form button:hover:not(:disabled) {
 .logo {
   font-size: 1.3rem;
   font-weight: bold;
-  color: #00d8ff;
+  color: #000000;
 }
 
 .nav-links a {
@@ -492,11 +492,11 @@ form button:hover:not(:disabled) {
 }
 
 .nav-links a:hover {
-  color: #00d8ff;
+  color: #000000;
 }
 
 .nav-links a.active {
-  color: #00d8ff;
+  color: #000000;
   font-weight: 600;
 }
 
@@ -507,6 +507,432 @@ form button:hover:not(:disabled) {
   left: 0;
   height: 2px;
   width: 100%;
-  background-color: #00d8ff;
+  background-color: #000000;
   border-radius: 10px;
+}
+
+
+/* 📩 Contact Form Container */
+.contact-form-container {
+  background-color: #fff;
+  color: #2f3640;
+  padding: 3rem 2rem;
+  max-width: 700px;
+  margin: 3rem auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.contact-form-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form-container p {
+  text-align: center;
+  font-size: 1rem;
+  color: #57606f;
+  margin-bottom: 2rem;
+}
+
+/* 🧾 Input Groups */
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border: 1px solid #dcdde1;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.input-group:focus-within {
+  border-color: #000000;
+}
+
+.input-group .icon {
+  color: #000000;
+}
+
+.input-group input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: transparent;
+}
+
+/* 📝 Textarea */
+textarea {
+  width: 100%;
+  border: 1px solid #dcdde1;
+  border-radius: 12px;
+  padding: 1rem;
+  font-size: 1rem;
+  resize: vertical;
+  min-height: 120px;
+  transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #000000;
+}
+
+/* 🧃 Submit Button */
+button[type="submit"] {
+  background-color: #000000;
+  color: white;
+  padding: 0.85rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+button[type="submit"]:hover {
+  background-color: #000000;
+}
+
+button[type="submit"]:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ✅ Submission Messages */
+.submission-message {
+  margin: 1rem 0;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.submission-success {
+  background-color: #dff9fb;
+  color: #22a6b3;
+}
+
+.submission-error {
+  background-color: #fcdede;
+  color: #e84118;
+}
+
+.submission-submitting {
+  background-color: #f6f6f6;
+  color: #7f8fa6;
+}
+
+/* 🔄 Spinner */
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* 🪶 Accessibility */
+.sr-only {
+  position: absolute;
+  left: -9999px;
+}
+
+/* 📱 Mobile First */
+@media screen and (max-width: 600px) {
+  .contact-form-container {
+    padding: 2rem 1rem;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
+
+/* 🎨 Projects Section */
+.projects-section {
+  padding: 4rem 2rem;
+  background-color: #f9f9fb;
+  color: #2f3640;
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #2f3640;
+}
+
+/* ⌛ Loading State */
+.loading-text {
+  font-size: 1.1rem;
+  color: #888;
+}
+
+/* 📦 Grid Container */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* 💼 Project Card */
+.project-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.project-card h3 {
+  font-size: 1.25rem;
+  margin: 1rem 1.2rem 0.3rem;
+  color: #2f3640;
+}
+
+.project-card .description {
+  font-size: 0.95rem;
+  color: #57606f;
+  margin: 0 1.2rem 1rem;
+}
+
+/* 🖼️ Image Wrapper with Overlay */
+.img-wrapper {
+  position: relative;
+}
+
+.project-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.img-wrapper:hover .project-img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 151, 230, 0.85);
+  color: white;
+  padding: 0.6rem 1rem;
+  width: 100%;
+  font-size: 0.85rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.img-wrapper:hover .overlay {
+  opacity: 1;
+}
+
+/* 💻 Tech Stack Tags */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.tech-tag {
+  background-color: #dff9fb;
+  color: #000000;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+/* 🔗 Links */
+.project-links {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.2rem;
+  padding: 0 1.2rem;
+  margin-top: auto;
+}
+
+.project-links a {
+  font-weight: 600;
+  color: #000000;
+  transition: color 0.2s ease;
+}
+
+.project-links a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+/* 📱 Responsive */
+@media screen and (max-width: 768px) {
+  .project-img {
+    height: 160px;
+  }
+
+  .projects-section {
+    padding: 3rem 1rem;
+  }
+
+  .project-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+
+:root {
+  --bg: #000;
+  --text: #fff;
+  --accent: #ffffff;
+  --hover: rgba(255, 255, 255, 0.1);
+  --border: rgba(255, 255, 255, 0.12);
+}
+
+/* 📌 Container */
+.custom-navbar {
+  background: var(--bg);
+  padding: 0.75rem 1.5rem;
+  border-radius: 16px;
+  margin: 1rem auto;
+  max-width: 1280px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* 🧱 Flex Grid */
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 🔰 Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--text);
+}
+
+.navbar-logo img {
+  height: 28px;
+}
+
+/* 🧭 Links */
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links a {
+  color: var(--text);
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+  background-color: var(--hover);
+}
+
+/* 🎯 Right Actions */
+.navbar-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn {
+  padding: 0.5rem 1.1rem;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.btn-outline:hover {
+  background-color: var(--hover);
+}
+
+.btn-solid {
+  background: var(--accent);
+  color: black;
+  border: none;
+}
+
+.btn-solid:hover {
+  background: #eaeaea;
+}
+
+/* 📱 Mobile */
+.hamburger {
+  display: none;
+  font-size: 1.4rem;
+  background: none;
+  border: none;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 1rem;
+    right: 1rem;
+    background-color: var(--bg);
+    padding: 1rem;
+    border-radius: 12px;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navbar-actions {
+    display: none;
+  }
 }

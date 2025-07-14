@@ -33,7 +33,7 @@ function Projects() {
                     extra: "Animated icons + geolocation support.",
                     tech: ["React", "API", "React Router", "Tailwind CSS"],
                     github: "https://github.com/jaymaina-8/AddStudent_App.git",
-                    image: "/website-template-62651.webp",
+                    image: "/archive-3859388.jpg",
                 },
             ]);
             setLoading(false);
